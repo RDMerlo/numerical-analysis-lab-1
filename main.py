@@ -1,12 +1,12 @@
 import numpy as np
 import copy
 
-
+#смена колонок
 def swap_columns(a, i, j):
   for k in range(len(a)):
     a[k][i], a[k][j] = a[k][j], a[k][i]
 
-
+#смена строк
 def swap_row(a, i, j):
   temp = copy.copy(A[i])
   A[i] = A[j]
